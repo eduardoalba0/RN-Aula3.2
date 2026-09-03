@@ -1,10 +1,10 @@
 import { PaperProvider } from "react-native-paper";
-import PageContador from "./src/pages/PageContador";
+import PageTarefas from "./src/pages/PageTarefas";
 
 export default function App() {
   return (
     <PaperProvider>
-      <PageContador />
+      <PageTarefas />
     </PaperProvider>
   );
 }

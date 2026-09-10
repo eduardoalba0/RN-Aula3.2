@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
-import { SafeAreaView } from "react-native-safe-area-context";
-import { StyleSheet } from "react-native"
+import { StyleSheet, ScrollView } from "react-native"
 import { Card, Text } from "react-native-paper";
 
 function PageTarefas() {
@@ -21,7 +20,7 @@ function PageTarefas() {
     }, [])
 
     return (
-        <SafeAreaView style={styles.container}>
+        <ScrollView style={styles.container}>
             {tarefas.map(tarefa => (
                 <Card>
                     <Card.Content>
@@ -29,7 +28,7 @@ function PageTarefas() {
                     </Card.Content>
                 </Card>
             ))}
-        </SafeAreaView>
+        </ScrollView>
     )
 
 
